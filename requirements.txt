@@ -1,0 +1,5 @@
+requests
+igdb-api-v4
+python-dotenv
+sqlmodel
+SQLAlchemy-Utils

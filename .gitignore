@@ -1,0 +1,6 @@
+__pycache__/
+.vscode/settings.json
+.venv
+.env
+*dump.json
+*.db
