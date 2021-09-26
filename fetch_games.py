@@ -20,9 +20,9 @@ def fetch_games(limit: int = 1):
 
     if limit < 5:
         pprint(games, width=120)
-
-    with open("data_dump.json", "w", encoding="utf-8") as file:
-        json.dump(games, file, ensure_ascii=False)
+    else:
+        with open("data_dump.json", "w", encoding="utf-8") as file:
+            json.dump(games, file, ensure_ascii=False)
 
 
 if __name__ == "__main__":

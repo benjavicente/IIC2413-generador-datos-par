@@ -19,7 +19,7 @@ class Videojuego_Genero(SQLModel, table=True):
 
 
 class Videojuego(SQLModel, table=True):
-    vid: Optional[int] = Field(default=None, primary_key=True)
+    vid: int = Field(default=None, primary_key=True)
     titulo: str
     puntuacion: float
     clasificacion: str
@@ -32,7 +32,7 @@ class Videojuego(SQLModel, table=True):
 
 
 class Proveedor(SQLModel, table=True):
-    prov_id: Optional[int] = Field(default=None, primary_key=True)
+    prov_id: int = Field(default=None, primary_key=True)
     nombre: str
     plataforma: str
     # Relation attributes
@@ -42,7 +42,7 @@ class Proveedor(SQLModel, table=True):
 
 
 class Genero(SQLModel, table=True):
-    gid: Optional[int] = Field(default=None, primary_key=True)
+    gid: int = Field(default=None, primary_key=True)
     nombre: str
     # Relation attributes
     videojuegos: List["Videojuego"] = Relationship(

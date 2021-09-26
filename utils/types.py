@@ -25,5 +25,6 @@ class DumpElement(TypedDict):
     platforms: list[Plataform]
     summarry: str
     themes: list[Theme]
+    genres: list[Theme]
     total_rating: float
     first_release_date: float
